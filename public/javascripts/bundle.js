@@ -55,7 +55,8 @@
 	  displayName: "App",
 
 	  componentDidMount: function componentDidMount() {
-	    console.log('componentDidMount');
+	    document.getElementById('preloader').remove();
+	    console.log('componentDidMount: removing preloader');
 	  },
 
 	  render: function render() {
