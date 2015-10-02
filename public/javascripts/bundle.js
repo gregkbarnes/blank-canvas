@@ -48,8 +48,8 @@
 
 	var React = __webpack_require__(1);
 
-	var FirstComponent = React.createClass({
-	  displayName: 'FirstComponent',
+	var NavBar = React.createClass({
+	  displayName: 'NavBar',
 
 	  render: function render() {
 	    return React.createElement(
@@ -60,9 +60,9 @@
 	  }
 	});
 
-	React.render(React.createElement(FirstComponent, null), document.getElementById('react-entry'));
+	React.render(React.createElement(NavBar, null), document.getElementById('react-entry'));
 
-	exports = FirstComponent;
+	exports = NavBar;
 
 /***/ },
 /* 1 */
