@@ -51,6 +51,8 @@
 	var React = __webpack_require__(5);
 	var NavBar = __webpack_require__(161);
 
+	document.write("Test");
+
 	var App = React.createClass({
 	  displayName: "App",
 
@@ -61,7 +63,7 @@
 
 	  render: function render() {
 	    return React.createElement(
-	      "div",
+	      "app",
 	      null,
 	      React.createElement(NavBar, null)
 	    );
