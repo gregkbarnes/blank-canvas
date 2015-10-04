@@ -20788,9 +20788,18 @@
 
 	  render: function render() {
 	    return React.createElement(
-	      "h3",
-	      null,
-	      "NavBar"
+	      "div",
+	      { className: "NavBar" },
+	      React.createElement(
+	        "h3",
+	        null,
+	        "NavBar"
+	      ),
+	      React.createElement(
+	        "p",
+	        null,
+	        "Heroku test..."
+	      )
 	    );
 	  }
 	});
