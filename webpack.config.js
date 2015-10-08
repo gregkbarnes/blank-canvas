@@ -1,3 +1,5 @@
+var Promise = require('es6-promise').Promise;
+
 module.exports = {
     entry: __dirname + "/src/App.jsx",
     output: {
