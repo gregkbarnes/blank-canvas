@@ -3,7 +3,10 @@ require("./stylesheets/webpack-style.css");
 var React = require('react');
 var NavBar = require("./NavBar.jsx");
 
-document.write("Test")
+$( document ).ready(function(){
+  $(".button-collapse").sideNav();
+  console.log('jquery: document ready!')
+})
 
 var App = React.createClass({
   componentDidMount: function() {

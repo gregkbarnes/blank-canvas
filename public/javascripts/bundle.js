@@ -51,7 +51,10 @@
 	var React = __webpack_require__(5);
 	var NavBar = __webpack_require__(161);
 
-	document.write("Test");
+	$(document).ready(function () {
+	  $(".button-collapse").sideNav();
+	  console.log('jquery: document ready!');
+	});
 
 	var App = React.createClass({
 	  displayName: "App",
@@ -20788,17 +20791,51 @@
 
 	  render: function render() {
 	    return React.createElement(
-	      "div",
-	      { className: "NavBar" },
+	      "nav",
+	      null,
 	      React.createElement(
-	        "h3",
-	        null,
-	        "NavBar"
-	      ),
-	      React.createElement(
-	        "p",
-	        null,
-	        "Heroku test..."
+	        "div",
+	        { className: "nav-wrapper" },
+	        React.createElement(
+	          "a",
+	          { href: "#!", className: "brand-logo" },
+	          "Blank-Canvas"
+	        ),
+	        React.createElement(
+	          "a",
+	          { href: "#", "data-activates": "mobile-demo", className: "button-collapse" },
+	          React.createElement(
+	            "i",
+	            { className: "material-icons" },
+	            "menu"
+	          )
+	        ),
+	        React.createElement(
+	          "ul",
+	          { className: "right hide-on-med-and-down" },
+	          React.createElement(
+	            "li",
+	            null,
+	            React.createElement(
+	              "a",
+	              { href: "#" },
+	              "Link 1"
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          "ul",
+	          { className: "side-nav", id: "mobile-demo" },
+	          React.createElement(
+	            "li",
+	            null,
+	            React.createElement(
+	              "a",
+	              { href: "#" },
+	              "Link 1"
+	            )
+	          )
+	        )
 	      )
 	    );
 	  }
